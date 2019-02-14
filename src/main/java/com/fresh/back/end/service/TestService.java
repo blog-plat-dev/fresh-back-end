@@ -11,12 +11,26 @@ import com.fresh.back.end.model.Tests;
  */
 public interface TestService {
 
+	/**
+	 * 测试增加功能
+	 */
 	public void add();
 
+	/**
+	 * 测试更新功能
+	 */
 	public void update();
 
+	/**
+	 * 测试删除功能
+	 */
 	public void delete();
 
+	/**
+	 * 测试查询功能
+	 * 
+	 * @return List 集合
+	 */
 	public List<Tests> queryAll();
 
 }
