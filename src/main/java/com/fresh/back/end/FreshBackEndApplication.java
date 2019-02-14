@@ -7,8 +7,12 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @MapperScan(basePackages="com.fresh.back.end.mapper")
+/**
+ * SpringBoot启动类
+ * @author reborn
+ *
+ */
 public class FreshBackEndApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(FreshBackEndApplication.class, args);
 	}
