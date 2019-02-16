@@ -10,7 +10,8 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import org.springframework.stereotype.Component;
 /**
- * 用于获取方法执行所花费的时间，生产环境关闭。
+ * 用于对请求与响应进行预处理
+ * 在这里用来计算每一个请求所花费的时间
  * @author reborn
  *
  */
