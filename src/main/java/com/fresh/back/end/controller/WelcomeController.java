@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fresh.back.end.service.TestService;
-import com.fresh.back.end.utils.JSONResult;
+import com.fresh.back.end.utils.JsonResult;
 
 /**
  * 测试类
@@ -35,8 +35,8 @@ public class WelcomeController {
 	 * @return JSON
 	 */
 	@RequestMapping("/addSubmit.do")
-	public JSONResult addSubmit() {
-		return JSONResult.ok();
+	public JsonResult addSubmit() {
+		return JsonResult.ok();
 	}
 
 	/**
@@ -44,8 +44,8 @@ public class WelcomeController {
 	 * @return JSON
 	 */
 	@RequestMapping("/updateSubmit.do")
-	public JSONResult updateSubmit() {
-		return JSONResult.ok();
+	public JsonResult updateSubmit() {
+		return JsonResult.ok();
 	}
 
 	/**
@@ -53,8 +53,8 @@ public class WelcomeController {
 	 * @return JSON
 	 */
 	@RequestMapping("/queryAll.do")
-	public JSONResult queryAll() {
-		return JSONResult.ok(testService.queryAll());
+	public JsonResult queryAll() {
+		return JsonResult.ok(testService.queryAll());
 	}
 
 }
