@@ -28,7 +28,7 @@ public class GlobalException {
 		mav.addObject("url", req.getRequestURL());
 		// 设置视图名称
 		mav.setViewName("errorPage");
-		// 如果发生异常则跳转到errorPage页面
+		// 如果发生异常则跳转到errorPage页面，该页面还未被配置
 		return mav;
 	}
 
